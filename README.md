@@ -10,4 +10,5 @@
 * Caricare dati esterni
 * Novità introdotte in EcmaScript 6 (2015)
 * BabelJS & Gulp
-* EcmaScript 7 (2016)
+* Strumenti e tecniche di debug
+* Pubblicare progetti basati su Javascript
