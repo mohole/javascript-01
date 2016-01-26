@@ -1,0 +1,22 @@
+{
+  "name": "js-next",
+  "version": "1.0.0",
+  "description": "materiale per il corso",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohole/js-next.git"
+  },
+  "author": "Salvatore Laisa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohole/js-next/issues"
+  },
+  "homepage": "https://github.com/mohole/js-next#readme",
+  "devDependencies": {
+    "babel-cli": "^6.4.5"
+  }
+}
