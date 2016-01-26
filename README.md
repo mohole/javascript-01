@@ -1,8 +1,10 @@
 # JS NOW & NEXT
 
+Introduzione e approccio moderno al linguaggio di scripting utilizzato per lo sviluppo di interfaccie per Web Applications, e un primo sguardo agli aggiornamenti recentemente introdotti con EcmaScript 6.
+
 ### 1. Prerequisiti
 * Conoscenza base di HTML e CSS
-* Google Chrome, Git e un editor di codice installati sul computer
+* Google Chrome, Git e un editor di codice ([Atom](https://atom.io/) è una valida opzione!) installati sul computer
 
 ### 2. Programma
 * I fondamenti di Javascript

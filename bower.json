@@ -1,0 +1,24 @@
+{
+  "name": "js-next",
+  "homepage": "https://github.com/mohole/js-next",
+  "authors": [
+    "Salvatore Laisa <moebiusmania@gmail.com>"
+  ],
+  "description": "materiale per il corso",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "fetch": "~0.11.0",
+    "es6-promise": "~3.0.2"
+  }
+}
