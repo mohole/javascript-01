@@ -15,4 +15,9 @@ Introduzione e approccio moderno al linguaggio di scripting utilizzato per lo sv
 * Strumenti e tecniche di debug
 * Pubblicare progetti basati su Javascript
 
-![Mohole](https://avatars2.githubusercontent.com/u/5365400?v=3&s=200)
+- - -
+<div style="text-align: center">
+
+![Mohole](https://avatars2.githubusercontent.com/u/5365400?v=3&s=100)
+
+</div>
