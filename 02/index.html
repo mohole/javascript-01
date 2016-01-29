@@ -7,6 +7,29 @@
 
   <link rel="stylesheet" href="./../bower_components/bootstrap/dist/css/bootstrap.min.css">
 
+  <style>
+
+  .anim{
+    transition: all 0.4s ease;
+  }
+
+  .forma{
+    width: 200px;
+    height: 200px;
+    background-color: navy;
+    border: 1px solid #333;
+    margin: 20px 0;
+  }
+
+  .muovi{
+    transform: scale(0.5) rotate(190deg);
+    margin-left: 300px;
+    background-color: green;
+    border-radius: 50%;
+  }
+
+  </style>
+
 </head>
 <body>
 
@@ -26,9 +49,30 @@
         </button>
         <label>...</label>
       </div>
-
     </form>
 
+    <h3>Manipolare classi CSS</h3>
+    <hr>
+    <button class="btn btn-default stile1">
+      Diventa primary
+    </button>
+
+    <button class="btn btn-default anim stile2">
+      Primo
+    </button>
+    <button class="btn btn-default anim stile2">
+      Secondo
+    </button>
+    <button class="btn btn-default anim stile2">
+      Terzo
+    </button>
+
+    <button class="btn btn-secondary stile3">
+      Primary o secondary?
+    </button>
+
+    <!-- Evento bindato in HTML  -->
+    <div class="forma anim" onclick="muoviOggetto(event)"></div>
 
   </div>
 

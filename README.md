@@ -17,7 +17,5 @@ Introduzione e approccio moderno al linguaggio di scripting utilizzato per lo sv
 
 - - -
 <div style="text-align: center">
-
-![Mohole](https://avatars2.githubusercontent.com/u/5365400?v=3&s=100)
-
+  <img src="https://avatars2.githubusercontent.com/u/5365400?v=3&s=100" alt="Mohole">
 </div>
