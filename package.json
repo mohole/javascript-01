@@ -18,5 +18,8 @@
   "homepage": "https://github.com/mohole/js-next#readme",
   "devDependencies": {
     "babel-cli": "^6.4.5"
+  },
+  "dependencies": {
+    "simple-restful": "^1.3.0"
   }
 }

@@ -7,6 +7,10 @@
 
   <link rel="stylesheet" href="./../bower_components/bootstrap/dist/css/bootstrap.min.css">
 
+  <!-- Polyfills per browsers che non supportano le Promise e/o la Fetch API -->
+  <script src="./../bower_components/es6-promise/promise.min.js"></script>
+  <script src="./../bower_components/fetch/fetch.js"></script>
+
 </head>
 <body>
 
@@ -15,14 +19,18 @@
     <hr>
     <h3>Oggetti Javascript <small>(guarda la console)</small></h3>
     <hr>
-    <h3>Da XmlHttpRequest a Fetch API</h3>
-
+    <h3>Fetch API</h3>
+    <p>In questo momento ci sono <strong id="temp">...</strong>° C a Milano. Dati di http://openweathermap.org/</p>
+    <hr>
+    <h3>Get & Post</h3>
+    <input type="text" class="form-control" placeholder="Scrivi e premi invio" id="input">
+    <p>Elementi in lista</p>
+    <ul id="lista"></ul>
   </div>
 
   <script src="./js/oggetti.js"></script>
   <script src="./js/fetchapi.js"></script>
-  <!-- <script src="./js/eventi.js"></script>
-  <script src="./js/classi.js"></script> -->
+  <script src="./js/getpost.js"></script>
 
 </body>
 </html>

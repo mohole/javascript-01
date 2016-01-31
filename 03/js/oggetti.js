@@ -57,10 +57,12 @@ var starwars = [
   }
 ];
 
+// Metodo sort per ordinare gli array
 var byYear = starwars.sort(function(a,b){
   return a.year - b.year;
 });
 
+// Utility per ordinare array di oggetti per attributi
 function ordina(attr){
   return starwars.sort(function(a,b){
     return a[attr] - b[attr];

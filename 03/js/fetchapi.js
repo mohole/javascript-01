@@ -13,4 +13,6 @@ fetch(url)
   .then(function(data){
     console.warn('Chiamata completata');
     console.log(data);
+    var temp = Math.ceil(data.list[0].main.temp);
+    document.querySelector('#temp').innerHTML = temp;
   });
