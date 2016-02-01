@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/mohole/js-next#readme",
   "devDependencies": {
-    "babel-cli": "^6.4.5"
+    "babel-cli": "^6.4.5",
+    "babel-preset-es2015": "^6.3.13"
   },
   "dependencies": {
+    "babel-plugin-transform-es2015-modules-systemjs": "^6.4.0",
     "simple-restful": "^1.3.0"
   }
 }
