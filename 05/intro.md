@@ -4,3 +4,4 @@
 - Integrare Gulp e Babel
 - Alternative a Gulp
 - Debuggare con i Chrome Dev Tools
+- Templating lato client

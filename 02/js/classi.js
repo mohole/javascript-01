@@ -34,3 +34,7 @@ $('.stile3').addEventListener('click', function(evt){
 function muoviOggetto(evt){
   evt.target.classList.toggle('muovi');
 };
+
+function usaAnimate(evt){
+  evt.target.classList.toggle('rubberBand');
+}
