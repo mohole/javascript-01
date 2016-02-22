@@ -24,13 +24,13 @@ Introduzione e approccio moderno al linguaggio di scripting utilizzato per lo sv
 * Spostarsi nell cartella principale del repo scaricato
 * Digitare i seguenti comandi per installare le dipendenze necessarie e premere invio
 
-  npm install
+    npm install
 
-  bower install
+    bower install
 
 * Avviare un webserver nella cartella attuale con il comando
 
-  http-server
+    http-server
 
 * Avviare un browser e digitare l'indirizzo "http://localhost:8080"
 
