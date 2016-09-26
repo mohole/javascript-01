@@ -1,4 +1,4 @@
-# JS NOW & NEXT
+# MODERN JS - 01
 
 Introduzione e approccio moderno al linguaggio di scripting utilizzato per lo sviluppo di interfaccie per Web Applications, e un primo sguardo agli aggiornamenti recentemente introdotti con EcmaScript 6 (2015).
 
