@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JSON</title>
+  <link rel="stylesheet" href="./../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+
+</head>
+<body>
+
+  <div class="container">
+    <h1>JavaScript Object Notation</h1>
+
+    <button onclick="render(singolo)" class="btn btn-secondary">Solo 1980</button>
+    <button onclick="render(coppia)" class="btn btn-secondary">Solo 1980 e 2015</button>
+    <button onclick="render(letteraT)" class="btn btn-secondary">Solo film che iniziani con 't'</button>
+    <button onclick="render(starwars)" class="btn btn-primary">Tutti</button>
+    <hr>
+
+    <ol id="list"></ol>
+  </div>
+
+
+<script>
+
+// Array di oggetti
+var starwars = [
+  {
+    title: "The Phantom Menace",
+    year: 1999,
+    order: 1
+  },{
+    title: "Attack of the clones",
+    year: 2002,
+    order: 2
+  },{
+    title: "The revenge of the Sith",
+    year: 2005,
+    order: 3
+  },{
+    title: "A new hope",
+    year: 1977,
+    order: 4
+  },{
+    title: "The Empire strickes back",
+    year: 1980,
+    order: 5
+  },{
+    title: "The return of the Jedi",
+    year: 1983,
+    order: 6
+  },{
+    title: "The force awakens",
+    year: 2015,
+    order: 7
+  }
+]
+
+
+// Seleziono la lista nella pagina
+var list = document.querySelector('#list');
+
+// Filtro con solo il film del 1980
+var singolo = starwars.filter(function(obj){
+  return obj.year === 1980;
+});
+
+// Filtro con solo film del 1980 e 2015
+// && = AND
+// || = OR
+var coppia = starwars.filter(function(obj){
+  return obj.year === 1980 || obj.year === 2015;
+});
+
+// Filtro con tutti i film che iniziano per 't'
+var letteraT = starwars.filter(function(obj){
+  return obj.title.charAt(0).toLowerCase() === 't' ;
+});
+
+
+// Disegno dei tag <li> per ogni elemento nell'array
+// e li aggiungo nella lista
+function render(myarray){
+  list.innerHTML = '';
+
+  myarray.forEach(function(elem,index){
+    // console.log(elem,index);
+    list.innerHTML += '<li><b>' + elem.title + '</b></li>';
+  });
+}
+
+// Primo render di tutta la collezione
+render(starwars);
+
+</script>
+
+</body>
+</html>

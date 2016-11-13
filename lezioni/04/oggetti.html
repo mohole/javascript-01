@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Oggetti</title>
+  <link rel="stylesheet" href="./../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+
+  <div class="container">
+    <h1>Oggetti</h1>
+    <p><small>(apri la console...)</small></p>
+  </div>
+
+
+<script>
+
+// Creo un nuovo oggetto
+var metodo1 = {};
+var metodo2 = new Object();
+
+// Creo un oggetto con dei valori
+var film = {
+  titolo: 'Deadpool',
+  anno: 2016,
+  durata: "120min",
+  like: false
+}
+
+console.log( film.titolo ); // Restitutisce la properità titolo
+
+// Modifico le proprietà di un oggetto
+film.titolo = 'Il caso spotlight';
+film.like = true;
+
+// Se setto una proprietà inesistente viene creata ala momento
+film.voto = 8;
+
+// Oggetti annidati
+var corso = {
+  nome: 'Javascript 1',
+  allievi: ['tiziano','antonella', 'giovanni'],
+  info: {
+    orario: 'serale',
+    aula: 'sbarbaro'
+  }
+}
+
+// Documentazione MDN
+// https://developer.mozilla.org/it/docs/Web/JavaScript/Reference/Global_Objects/Object
+
+
+
+</script>
+
+</body>
+</html>
