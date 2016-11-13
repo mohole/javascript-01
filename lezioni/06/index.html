@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple JS app</title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet"
+    href="./../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+  <!-- Polyfill per Fetch API e Promises -->
+  <script src="./../../bower_components/fetch/fetch.js"></script>
+  <script src="./../../bower_components/es6-promise/es6-promise.min.js"></script>
+
+  <style>
+    body{
+      margin: 30px 0;
+    }
+    input{
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Simple JS app</h1>
+    <hr>
+    <input type="text" id="search"
+    placeholder="fai una ricerca..." class="form-control">
+    <div id="results" class="row">
+      <!-- qui i risultati -->
+    </div>
+    <button id="cancel" class="btn btn-danger">
+      Cancella ricerca
+    </button>
+  </div>
+
+
+<!--
+Isolo il template dal resto del codice
+
+@@@ e ### segnaposti per valori dinamici da inserire in fase
+di rendering del template
+-->
+<template id="tmpl">
+
+  <div class="element col-xs-4">
+    <div class="card">
+      <div class="card-block">
+        <h4 class="card-title">@@@</h4>
+        <p class="card-text">###</p>
+      </div>
+    </div>
+  </div>
+
+</template>
+
+
+<!-- Codice simple app -->
+<script>
+
+// Variabili globali
+var search = document.querySelector('#search');
+var results = document.querySelector('#results');
+var cancel = document.querySelector('#cancel');
+var tmpl = document.querySelector('#tmpl');
+var elements = [];
+var url = 'http://jsonplaceholder.typicode.com/posts';
+
+cancel.addEventListener('click', function(evt){
+  search.value = '';
+  render(elements);
+});
+
+// Evento alla pressione di un qualunque tasto su un elemento
+search.addEventListener('keyup', function(evt){
+  console.log(search.value);
+  var query = search.value;
+  // Credo un filtro cercando il valore sia nel title che nel body
+  // di ogni elemento dell'array
+  var filtered = elements.filter(function(obj){
+    var title = obj.title.search(query);
+    var body = obj.body.search(query);
+    return title > -1 || body > -1;
+  });
+  render(filtered);
+});
+
+// Disegna i template nella pagina in base a un dato array
+function render(collection){
+  // Svuoto il contenitore dei risultati
+  results.innerHTML = '';
+  /*
+  Lo ripopolo usando l'array passato come "collection"
+  Per ogni elemento creo una copia del template e sostituisco
+  i segnaposti con i valori reali del singolo elemento.
+  */
+  collection.forEach(function(e,i){
+    results.innerHTML += tmpl.innerHTML
+                                .replace('@@@', e.title)
+                                .replace('###', e.body);
+  });
+}
+
+// Chiamata dati server
+fetch(url)
+  .then(function(response){
+    return response.json();
+  })
+  .then(function(data){
+    console.log(data);
+    elements = data;
+    render(elements);
+  })
+
+
+</script>
+
+</body>
+</html>

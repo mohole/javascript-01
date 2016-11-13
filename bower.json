@@ -1,0 +1,24 @@
+{
+  "name": "modern-js-01",
+  "authors": [
+    "Salvatore Laisa <moebiusmania@gmail.com>"
+  ],
+  "description": "Librerie per il corso",
+  "main": "",
+  "license": "MIT",
+  "homepage": "www.mohole.it",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "es6-promise": "^4.0.5",
+    "bootstrap": "4.0.0-alpha.5",
+    "fetch": "^1.0.0",
+    "animate.css": "^3.5.2"
+  }
+}
