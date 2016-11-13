@@ -41,6 +41,7 @@ Introduzione e approccio moderno al linguaggio di scripting utilizzato per lo sv
   * Limiti di innerHTML
   * Creare un proprio templating
   <!-- * Librerie di templating -->
+
 <!-- * Pubblicare progetti basati su Javascript
   * Utilizzo base di un repository GitHub
   * Creare una GitHub page -->
@@ -50,7 +51,7 @@ Introduzione e approccio moderno al linguaggio di scripting utilizzato per lo sv
 * Aprire il terminale (Mac OS/Linux) o il prompt dei comandi (Windows)
 * Spostarsi nell cartella principale del repo scaricato
 * Avviare un webserver nella cartella attuale con il comando ```$ http-server```
-* Avviare un browser e digitare l'indirizzo "http://localhost:8080"
+* Avviare un browser e digitare l'indirizzo ```http://localhost:8080```
 
 ### 4. Licenza
 MIT License
