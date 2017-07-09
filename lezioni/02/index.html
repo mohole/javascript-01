@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS: Lezione 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="./../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./../../node_modules/animate.css/animate.min.css">
+
+  <style>
+  .anim{
+    transition: all 0.4s ease;
+  }
+  .forma{
+    width: 200px;
+    height: 200px;
+    background-color: navy;
+    border: 1px solid #333;
+    margin: 20px 0;
+  }
+  .muovi{
+    transform: scale(0.5) rotate(190deg);
+    margin-left: 300px;
+    background-color: green;
+    border-radius: 50%;
+  }
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+    <h1>Lezione 2</h1>
+    <hr>
+    <h3>Funzioni <small>(guarda la console)</small></h3>
+    <hr>
+    <h3>Eventi</h3>
+    <form class="form-inline iva">
+        <label>Interazione con una form </label>
+        <input type="number" class="form-control" placeholder="123">
+        <button class="btn btn-secondary">
+            Aggiungi IVA
+        </button>
+        <label>...</label>
+    </form>
+
+    <hr>
+    <h3>Manipolare classi CSS</h3>
+    <hr>
+    <button class="btn btn-secondary stile1">
+      Diventa primary
+    </button>
+
+    <button class="btn btn-secondary anim stile2">
+      Primo
+    </button>
+    <button class="btn btn-secondary anim stile2">
+      Secondo
+    </button>
+    <button class="btn btn-secondary anim stile2">
+      Terzo
+    </button>
+
+    <button class="btn btn-secondary stile3">
+      Primary o secondary?
+    </button>
+
+    <hr>
+
+    <p>Cliccare su questo elemento:</p>
+    <!-- Evento bindato in HTML  -->
+    <div class="forma anim" onclick="muoviOggetto(event)"></div>
+
+    <p>Animazioni con <strong>animate.css</strong></p>
+    <div class="forma animated" onClick="usaAnimate(event)"></div>
+
+  </div>
+
+  <script src="./js/funzioni.js"></script>
+  <script src="./js/eventi.js"></script>
+  <script src="./js/classi.js"></script>
+
+</body>
+</html>
