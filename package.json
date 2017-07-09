@@ -1,0 +1,19 @@
+{
+  "name": "modern-js-01",
+  "version": "2.0.0",
+  "description": "File di riferimento per il corso",
+  "main": "index.js",
+  "repository": "https://github.com/mohole/modern-js-01",
+  "author": "Salvatore Laisa <moebiusmania@gmail.com>",
+  "license": "MIT",
+  "scripts":{
+    "start": "http-server -p 8081"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "bootstrap": "4.0.0-alpha.6",
+    "http-server": "^0.10.0",
+    "promise-polyfill": "^6.0.2",
+    "whatwg-fetch": "^2.0.3"
+  }
+}
