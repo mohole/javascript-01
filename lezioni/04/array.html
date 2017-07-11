@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Array</title>
-  <link rel="stylesheet" href="./../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="./../../node_modules/bootstrap/dist/css/bootstrap.min.css">
 
 </head>
 <body>
@@ -13,33 +14,7 @@
     <p><small>(apri la console...)</small></p>
   </div>
 
-<script>
-
-// Creazione array | i due metodi danno lo stesso risultato
-var metodo1 = [];
-var metodo2 = new Array();
-
-// Creo array con contenuto
-var robot = ['mazinga','goldrake','jeeg'];
-// I valori possono anche essere di tipo diverso
-var casuale = ['ciao', 42, true];
-
-console.log( robot[0] );    // stampa 'tiziano' in console
-robot[0] = 'eva-01';   // modifico il primo elemento
-
-console.log( robot.length ); // Resituisce il numero di elementi nell'array
-
-// Aggiungo elemento in fondo all'array
-robot.push('voltron 5');
-
-// Rimuovo l'ultimo elemento
-robot.pop();
-
-// Documentazione MDN
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
-
-
-</script>
+  <script src="./js/array.js"></script>
 
 </body>
 </html>
