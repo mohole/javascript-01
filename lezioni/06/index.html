@@ -5,12 +5,11 @@
   <title>Simple JS app</title>
 
   <!-- Bootstrap -->
-  <link rel="stylesheet"
-    href="./../../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./../../node_modules/bootstrap/dist/css/bootstrap.min.css">
 
-  <!-- Polyfill per Fetch API e Promises -->
-  <script src="./../../bower_components/fetch/fetch.js"></script>
-  <script src="./../../bower_components/es6-promise/es6-promise.min.js"></script>
+  <!-- Polyfills per browsers che non supportano le Promise e/o la Fetch API -->
+  <script src="./../../node_modules/promise-polyfill/promise.min.js"></script>
+  <script src="./../../node_modules/whatwg-fetch/fetch.js"></script>
 
   <style>
     body{
@@ -48,8 +47,8 @@ di rendering del template
   <div class="element col-xs-4">
     <div class="card">
       <div class="card-block">
-        <h4 class="card-title">@@@</h4>
-        <p class="card-text">###</p>
+        <h4 class="card-title">{{title}}</h4>
+        <p class="card-text">{{body}}</p>
       </div>
     </div>
   </div>
@@ -58,64 +57,7 @@ di rendering del template
 
 
 <!-- Codice simple app -->
-<script>
-
-// Variabili globali
-var search = document.querySelector('#search');
-var results = document.querySelector('#results');
-var cancel = document.querySelector('#cancel');
-var tmpl = document.querySelector('#tmpl');
-var elements = [];
-var url = 'http://jsonplaceholder.typicode.com/posts';
-
-cancel.addEventListener('click', function(evt){
-  search.value = '';
-  render(elements);
-});
-
-// Evento alla pressione di un qualunque tasto su un elemento
-search.addEventListener('keyup', function(evt){
-  console.log(search.value);
-  var query = search.value;
-  // Credo un filtro cercando il valore sia nel title che nel body
-  // di ogni elemento dell'array
-  var filtered = elements.filter(function(obj){
-    var title = obj.title.search(query);
-    var body = obj.body.search(query);
-    return title > -1 || body > -1;
-  });
-  render(filtered);
-});
-
-// Disegna i template nella pagina in base a un dato array
-function render(collection){
-  // Svuoto il contenitore dei risultati
-  results.innerHTML = '';
-  /*
-  Lo ripopolo usando l'array passato come "collection"
-  Per ogni elemento creo una copia del template e sostituisco
-  i segnaposti con i valori reali del singolo elemento.
-  */
-  collection.forEach(function(e,i){
-    results.innerHTML += tmpl.innerHTML
-                                .replace('@@@', e.title)
-                                .replace('###', e.body);
-  });
-}
-
-// Chiamata dati server
-fetch(url)
-  .then(function(response){
-    return response.json();
-  })
-  .then(function(data){
-    console.log(data);
-    elements = data;
-    render(elements);
-  })
-
-
-</script>
+<script src="./js/app.js"></script>
 
 </body>
 </html>
