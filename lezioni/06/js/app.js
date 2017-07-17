@@ -4,8 +4,8 @@ const results = document.querySelector('#results');
 const cancel = document.querySelector('#cancel');
 const tmpl = document.querySelector('#tmpl');
 const url = 'http://jsonplaceholder.typicode.com/posts';
+
 const store = { 
-    _data: [],
     get: () => this._data,
     set: data => this._data = data.slice() 
  };
@@ -39,9 +39,11 @@ function render(collection){
   i segnaposti con i valori reali del singolo elemento.
   */
   collection.forEach((e,i) => {
-    results.innerHTML += tmpl.innerHTML
-                                .replace('{{title}}', e.title)
-                                .replace('{{body}}', e.body);
+    const clone = document.importNode(tmpl,true);
+    const elem = clone.innerHTML
+                          .replace('{{title}}', e.title)
+                          .replace('{{body}}', e.body);
+    results.innerHTML += elem;
   });
 }
 
