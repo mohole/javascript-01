@@ -6,13 +6,13 @@
   "repository": "https://github.com/mohole/modern-js-01",
   "author": "Salvatore Laisa <moebiusmania@gmail.com>",
   "license": "MIT",
-  "scripts":{
-    "start": "http-server -p 8081"
+  "scripts": {
+    "start": "live-server --port=8081"
   },
   "dependencies": {
     "animate.css": "^3.5.2",
-    "bootstrap": "4.0.0-alpha.6",
-    "http-server": "^0.10.0",
+    "bootstrap": "4.0.0-beta.3",
+    "live-server": "^1.2.0",
     "promise-polyfill": "^6.0.2",
     "whatwg-fetch": "^2.0.3"
   }

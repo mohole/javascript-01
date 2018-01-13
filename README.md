@@ -6,10 +6,10 @@ Introduzione e approccio moderno al linguaggio di scripting utilizzato per lo sv
 * [Google Chrome](https://www.google.it/chrome/browser/desktop/)
 * [Git](https://git-scm.com/)
 * [NodeJS](https://nodejs.org/en/)
-  * [Http-Server](https://www.npmjs.com/package/http-server) ```$ npm install -g http-server```
+  * [Live-Server](https://www.npmjs.com/package/live-server) ```$ npm install -g live-server```
   * *(opzionale)* [Yarn](https://yarnpkg.com/lang/en/)
 * Editor di codice ([Visual Studio Code](https://code.visualstudio.com/) o [Atom](https://atom.io/) sono valide opzioni!)
-* [GitKraken](https://www.gitkraken.com/) (GUI Git cross-platform)
+* *(opzionale)* [GitKraken](https://www.gitkraken.com/) (GUI Git cross-platform)
 
 ### 1. Prerequisiti
 * Conoscenza di HTML e CSS
@@ -44,7 +44,7 @@ Introduzione e approccio moderno al linguaggio di scripting utilizzato per lo sv
 * Aprire il terminale (Mac OS/Linux) o il prompt dei comandi (Windows)
 * Spostarsi nell cartella principale del repo scariyarncato
 * Avviare un webserver nella cartella attuale con il comando ```$ npm start``` (o ```$ yarn start```)
-* Avviare un browser e digitare l'indirizzo ```http://localhost:8080```
+* Avviare un browser e digitare l'indirizzo ```http://localhost:8081```
 
 ### 4. Licenza
 Rilasciato sotto [licenza pubblica MIT](LICENSE).
