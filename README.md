@@ -46,5 +46,11 @@ Introduzione e approccio moderno al linguaggio di scripting utilizzato per lo sv
 * Avviare un webserver nella cartella attuale con il comando ```$ npm start``` (o ```$ yarn start```)
 * Avviare un browser e digitare l'indirizzo ```http://localhost:8081```
 
-### 4. Licenza
+### 4. Guide
+Incluse in questo repository ci sono alcune brevi guide basilari riguardanti tool e concetti affrontati durante il corso.
+
+* [Cheatsheet: comandi base del terminale](./cheatsheets/command-line.md)
+* [Cheatsheet: strumenti CLI](./cheatsheets/tools.md)
+
+### 5. Licenza
 Rilasciato sotto [licenza pubblica MIT](LICENSE).
