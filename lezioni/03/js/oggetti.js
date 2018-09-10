@@ -63,7 +63,7 @@ const byYear = starwars.sort((a,b) => {
 });
 
 // Utility per ordinare array di oggetti per attributi
-function ordina(attr){
+const ordina = (attr) => {
   return starwars.sort((a,b) => {
     return a[attr] - b[attr];
   });

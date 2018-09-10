@@ -1,14 +1,20 @@
-// Definisco una funzione
-function test(){
+// Definisco una funzione (ES5)
+// function test(){
+//   console.log('faccio qualcosa...');
+// }
+
+// Definisco una funzione (ES2015 in poi)
+const test = () => {
   console.log('faccio qualcosa...');
 }
+
 
 // Invoco la funzione
 test();
 
 
 // Funzione con argomento
-function saluta(nome){
+const saluta = (nome) => {
   // "nome" è come una variabile ma esiste solo all'interno di questa funzione
   console.log('Bella lì ' + nome + "!");    // Concatenzione
   console.log(`Tutto rego ${nome}?`);       // ES2015 Template strings
@@ -19,7 +25,7 @@ saluta('fratello');
 
 
 // Funzione che restituisce un valore
-function aggiungiIva(valore,iva){
+const aggiungiIva = (valore,iva) => {
   // Operatore ternario per controllare valore argomenti e definire dei default
   valore = !valore ? 0 : valore;
   iva = !iva ? 23 : iva;

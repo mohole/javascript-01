@@ -1,9 +1,7 @@
 // Mini utility per velocizzare selezioni nel DOM
-function $(selector){
-  return document.querySelector(selector);
-}
+const $ = (selector) => document.querySelector(selector);
 
-function calcola(evt){
+const calcola = (evt) => {
   // Blocco l'evento di default (submit)
   evt.preventDefault();
   // Converto il valore dell'input da stringa a numero

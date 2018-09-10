@@ -30,7 +30,7 @@ search.addEventListener('keyup', (evt) => {
 });
 
 // Disegna i template nella pagina in base a un dato array
-function render(collection){
+const render = (collection) => {
   // Svuoto il contenitore dei risultati
   results.innerHTML = '';
   /*

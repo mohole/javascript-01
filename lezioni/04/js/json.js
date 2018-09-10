@@ -60,7 +60,7 @@ const letteraT = starwars.filter((obj) => {
 
 // Disegno dei tag <li> per ogni elemento nell'array
 // e li aggiungo nella lista
-function render(myarray){
+const render = (myarray) => {
   list.innerHTML = '';
 
   myarray.forEach((elem,index) => {
