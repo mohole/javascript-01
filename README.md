@@ -52,5 +52,10 @@ Incluse in questo repository ci sono alcune brevi guide basilari riguardanti too
 * [Cheatsheet: comandi base del terminale](./cheatsheets/command-line.md)
 * [Cheatsheet: strumenti CLI](./cheatsheets/tools.md)
 
-### 5. Licenza
+### 5. Riferimenti
+* [MDN (Mozilla Developer Network)](https://developer.mozilla.org/en-US/): dal 2017 lo standard di fatto per documentarsi su HTML, CSS e JavaScript.
+* [caniuse.com](https://caniuse.com/): tabelle di sintesi di supporto di varie funzionalità frontend sui vari browsers.
+* [JSON Placeholder](https://jsonplaceholder.typicode.com/): servizio online di finte API REST.
+
+### 6. Licenza
 Rilasciato sotto [licenza pubblica MIT](LICENSE).

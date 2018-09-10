@@ -10,10 +10,18 @@
     "start": "live-server --port=8081"
   },
   "dependencies": {
+<<<<<<< HEAD
     "animate.css": "^3.7.0",
     "bootstrap": "^4.1.3",
     "live-server": "^1.2.0",
     "promise-polyfill": "^8.1.0",
     "whatwg-fetch": "^2.0.4"
+=======
+    "animate.css": "3.5.2",
+    "bootstrap": "4.0.0-beta.3",
+    "live-server": "1.2.0",
+    "promise-polyfill": "6.0.2",
+    "whatwg-fetch": "2.0.3"
+>>>>>>> 1127c3058e7aa886b52b21a06574f60c66e4edcf
   }
 }
