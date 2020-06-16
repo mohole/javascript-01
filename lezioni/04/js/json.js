@@ -32,6 +32,10 @@ const starwars = [
     title: "The last jedi",
     year: 2017,
     order: 8
+  }, {
+    title: "Rise of Skywalker",
+    year: 2019,
+    order: 9
   }
 
 ]

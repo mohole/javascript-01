@@ -4,16 +4,14 @@
   "description": "File di riferimento per il corso",
   "main": "index.js",
   "repository": "https://github.com/mohole/modern-js-01",
-  "author": "Salvatore Laisa <moebiusmania@gmail.com>",
+  "author": "Salvatore Laisa <salvatore.laisa@mohole.it>",
   "license": "MIT",
   "scripts": {
     "start": "live-server --port=8081"
   },
   "dependencies": {
-    "animate.css": "^3.7.0",
-    "bootstrap": "^4.1.3",
-    "live-server": "^1.2.0",
-    "promise-polyfill": "^8.1.0",
-    "whatwg-fetch": "^2.0.4"
+    "animate.css": "4.1.0",
+    "bootstrap": "4.5.0",
+    "live-server": "1.2.1"
   }
 }

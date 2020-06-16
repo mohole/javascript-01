@@ -50,10 +50,15 @@ const starwars = [
     chronoOrder: 6,
     pubOrder: 3
   },{
-    title: 'Il risveglio della forza',
-    year: 2015,
-    chronoOrder: 7,
-    pubOrder: 7
+    title: 'Gli ultimi jedi',
+    year: 2017,
+    chronoOrder: 8,
+    pubOrder: 8
+  },{
+    title: 'L\'ascesa di Skywalker',
+    year: 2019,
+    chronoOrder: 9,
+    pubOrder: 9
   }
 ];
 

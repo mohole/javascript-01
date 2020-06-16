@@ -39,5 +39,5 @@ const muoviOggetto = (evt) => {
 };
 
 const usaAnimate = (evt) => {
-  evt.target.classList.toggle('rubberBand');
+  evt.target.classList.toggle('animate__rubberBand');
 }

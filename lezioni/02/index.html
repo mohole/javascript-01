@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>JS: Lezione 2</title>
@@ -9,17 +10,19 @@
   <link rel="stylesheet" href="./../../node_modules/animate.css/animate.min.css">
 
   <style>
-    .anim{
+    .anim {
       transition: all 0.4s ease;
     }
-    .forma{
+
+    .forma {
       width: 200px;
       height: 200px;
       background-color: navy;
       border: 1px solid #333;
       margin: 20px 0;
     }
-    .muovi{
+
+    .muovi {
       transform: scale(0.5) rotate(190deg);
       margin-left: 300px;
       background-color: green;
@@ -28,6 +31,7 @@
   </style>
 
 </head>
+
 <body>
 
   <div class="container">
@@ -37,12 +41,12 @@
     <hr>
     <h3>Eventi</h3>
     <form class="form-inline iva">
-        <label>Interazione con una form </label>
-        <input type="number" class="form-control" placeholder="123">
-        <button class="btn btn-secondary">
-            Aggiungi IVA
-        </button>
-        <label>...</label>
+      <label>Interazione con una form </label>
+      <input type="number" class="form-control" placeholder="123">
+      <button class="btn btn-secondary">
+        Aggiungi IVA
+      </button>
+      <label>...</label>
     </form>
 
     <hr>
@@ -73,7 +77,7 @@
     <div class="forma anim" onclick="muoviOggetto(event)"></div>
 
     <p>Animazioni con <strong>animate.css</strong></p>
-    <div class="forma animated" onClick="usaAnimate(event)"></div>
+    <div class="forma animate__animated" onClick="usaAnimate(event)"></div>
 
   </div>
 
@@ -82,4 +86,5 @@
   <script src="./js/classi.js"></script>
 
 </body>
+
 </html>

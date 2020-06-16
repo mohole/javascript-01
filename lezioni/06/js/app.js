@@ -5,23 +5,23 @@ const cancel = document.querySelector('#cancel');
 const tmpl = document.querySelector('#tmpl');
 const url = 'http://jsonplaceholder.typicode.com/posts';
 
-const store = { 
-    get: () => this._data,
-    set: data => this._data = data.slice() 
- };
+const store = {
+  data: [],
+};
 
 cancel.addEventListener('click', (evt) => {
   search.value = '';
-  render(store.get());
+  render(store.data);
 });
 
 // Evento alla pressione di un qualunque tasto su un elemento
 search.addEventListener('keyup', (evt) => {
   console.log(search.value);
   const query = search.value;
+  
   // Credo un filtro cercando il valore sia nel title che nel body
   // di ogni elemento dell'array
-  const filtered = store.get().filter((obj) => {
+  const filtered = store.data.filter((obj) => {
     const title = obj.title.search(query);
     const body = obj.body.search(query);
     return title > -1 || body > -1;
@@ -38,11 +38,11 @@ const render = (collection) => {
   Per ogni elemento creo una copia del template e sostituisco
   i segnaposti con i valori reali del singolo elemento.
   */
-  collection.forEach((e,i) => {
-    const clone = document.importNode(tmpl,true);
+  collection.forEach((e, i) => {
+    const clone = document.importNode(tmpl, true);
     const elem = clone.innerHTML
-                          .replace('{{title}}', e.title)
-                          .replace('{{body}}', e.body);
+      .replace('{{title}}', e.title)
+      .replace('{{body}}', e.body);
     results.innerHTML += elem;
   });
 }
@@ -54,6 +54,6 @@ fetch(url)
   })
   .then((data) => {
     console.log(data);
-    store.set(data);
-    render(store.get());
+    store.data = data;
+    render(store.data);
   })
