@@ -3,13 +3,11 @@
 Introduzione e approccio moderno al linguaggio di scripting utilizzato per lo sviluppo di interfaccie per Web Applications.
 
 ### 0. Software necessario
-* [Google Chrome](https://www.google.it/chrome/browser/desktop/)
+* [Google Chrome](https://www.google.it/chrome/browser/desktop/) o altri browser
 * [Git](https://git-scm.com/)
 * [NodeJS](https://nodejs.org/en/)
   * [Live-Server](https://www.npmjs.com/package/live-server) ```$ npm install -g live-server```
-  * *(opzionale)* [Yarn](https://yarnpkg.com/lang/en/)
 * Editor di codice ([Visual Studio Code](https://code.visualstudio.com/) o [Atom](https://atom.io/) sono valide opzioni!)
-* *(opzionale)* [GitKraken](https://www.gitkraken.com/) (GUI Git cross-platform)
 
 ### 1. Prerequisiti
 * Conoscenza di HTML e CSS
