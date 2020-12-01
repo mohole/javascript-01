@@ -1,17 +1,17 @@
 {
-  "name": "modern-js-01",
-  "version": "2.0.0",
-  "description": "File di riferimento per il corso",
+  "name": "javascript-01",
+  "version": "3.0.0",
+  "description": "Files & reference for the live lessons.",
   "main": "index.js",
-  "repository": "https://github.com/mohole/modern-js-01",
+  "repository": "https://github.com/mohole/javascript-01",
   "author": "Salvatore Laisa <salvatore.laisa@mohole.it>",
   "license": "MIT",
   "scripts": {
     "start": "live-server --port=8081"
   },
   "dependencies": {
-    "animate.css": "4.1.0",
-    "bootstrap": "4.5.0",
+    "animate.css": "4.1.1",
+    "bootstrap": "4.5.3",
     "live-server": "1.2.1"
   }
 }

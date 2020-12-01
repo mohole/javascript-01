@@ -16,12 +16,7 @@
 | ------- | ---- |
 | npm install  | installa tutti i moduli specificati in un package.json|
 | npm install [modulo]  | installa un modulo e lo registra come dipendenza nel package.json |
+| npm uninstall [modulo]  | disinstalla un modulo e lo rimuove come dipendenza nel package.json |
 | npm install [modulo] --save-dev | installa un modulo e lo registra come dipendenza di sviluppo nel package.json |
 | npm init | avvia il wizard per la creazione del file package.json |
-
-| Yarn | |
-| ------- | ---- |
-| yarn  | installa tutti i moduli specificati in un package.json|
-| yarn add [modulo]  | installa un modulo e lo registra come dipendenza nel package.json |
-| yarn add [modulo] --dev | installa un modulo e lo registra come dipendenza di sviluppo nel package.json |
-| yarn init | avvia il wizard per la creazione del file package.json |
+| npm init -y | come sopra ma usa in automatico tutti i valori di default |

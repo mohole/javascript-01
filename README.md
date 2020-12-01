@@ -1,59 +1,36 @@
-# MODERN JS - 01
+# Javascript 01
+Files & reference for the live lessons.
 
-Introduzione e approccio moderno al linguaggio di scripting utilizzato per lo sviluppo di interfaccie per Web Applications.
+### Cheatsheats
+* [Terminal basics](./cheatsheets/command-line.md)
+* [CLI tools](./cheatsheets/tools.md)
 
-### 0. Software necessario
-* [Google Chrome](https://www.google.it/chrome/browser/desktop/) o altri browser
-* [Git](https://git-scm.com/)
-* [NodeJS](https://nodejs.org/en/)
-  * [Live-Server](https://www.npmjs.com/package/live-server) ```$ npm install -g live-server```
-* Editor di codice ([Visual Studio Code](https://code.visualstudio.com/) o [Atom](https://atom.io/) sono valide opzioni!)
+### External references
+* [MDN (Mozilla Developer Network)](https://developer.mozilla.org/en-US/)
+* [JSON Placeholder](https://jsonplaceholder.typicode.com/)
+* [animate.css](https://animate.style/)
+* [caniuse.com](https://caniuse.com/)
 
-### 1. Prerequisiti
-* Conoscenza di HTML e CSS
-* Account [GitHub](https://github.com/)
+### License
+MIT License
 
-### 2. Programma
-* I fondamenti di Javascript
-  * ES 5/6/7/...
-  * Utilizzo
-  * Sintassi
-  * Tipi di dati primitivi
-  * Variabili e funzioni
-* Manipolazione del DOM
-  * Selezionare elementi nella pagina
-  * Modificare contenuto e aspetto
-  * Creare nuovi nodi
-* Creare interazioni con la pagina
-  * Introduzione agli eventi
-  * Event listeners e callback
-  * L'oggetto event
-  * Animazioni con animate.css
-* Caricare dati esterni
-  * Array e oggetti
-  * Breve storia delle tecniche AJAX
-  * Il formato JSON
-  * Fetch API e Promises
-  * Importare dati remoti nella pagina
+Copyright (c) 2020 Mohole Snc
 
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-### 3. Installazione e utilizzo
-* Clonare questo repository sul proprio PC
-* Aprire il terminale (Mac OS/Linux) o il prompt dei comandi (Windows)
-* Spostarsi nell cartella principale del repo scariyarncato
-* Avviare un webserver nella cartella attuale con il comando ```$ npm start``` (o ```$ yarn start```)
-* Avviare un browser e digitare l'indirizzo ```http://localhost:8081```
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-### 4. Guide
-Incluse in questo repository ci sono alcune brevi guide basilari riguardanti tool e concetti affrontati durante il corso.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-* [Cheatsheet: comandi base del terminale](./cheatsheets/command-line.md)
-* [Cheatsheet: strumenti CLI](./cheatsheets/tools.md)
-
-### 5. Riferimenti
-* [MDN (Mozilla Developer Network)](https://developer.mozilla.org/en-US/): dal 2017 lo standard di fatto per documentarsi su HTML, CSS e JavaScript.
-* [caniuse.com](https://caniuse.com/): tabelle di sintesi di supporto di varie funzionalità frontend sui vari browsers.
-* [JSON Placeholder](https://jsonplaceholder.typicode.com/): servizio online di finte API REST.
-
-### 6. Licenza
-Rilasciato sotto [licenza pubblica MIT](LICENSE).
