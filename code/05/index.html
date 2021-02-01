@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+  <script src="js/widget.js" type="module"></script>
+
+  <title>Contacts list widget</title>
+
+  <style>
+    body { background-color: #f0f0f0; }
+    .container { padding: 40px 0; }
+    .card { width: 400px; }
+    .card input { margin-bottom: 10px; }
+    .card li { margin: 10px 0; }
+  </style>
+</head>
+<body>
+
+  <section class="container widget">
+
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <h2 class="card-title">Lista contatti</h2>
+        <input type="text" name="search" autocomplete="off" class="form-control">
+        
+        <ol>
+          <!-- client side templating here -->
+        </ol>
+      </div>
+    </div>
+
+  </section>
+  
+</body>
+</html>

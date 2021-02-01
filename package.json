@@ -7,11 +7,11 @@
   "author": "Salvatore Laisa <salvatore.laisa@mohole.it>",
   "license": "MIT",
   "scripts": {
-    "start": "live-server --port=8081"
+    "start": "live-server --port=8080"
   },
   "dependencies": {
     "animate.css": "4.1.1",
-    "bootstrap": "4.5.3",
+    "bootstrap": "5.0.0-beta1",
     "live-server": "1.2.1"
   }
 }
