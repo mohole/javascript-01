@@ -7,11 +7,16 @@
   "author": "Salvatore Laisa <salvatore.laisa@mohole.it>",
   "license": "MIT",
   "scripts": {
-    "start": "live-server --port=8080"
+    "start": "live-server --port=8080",
+    "tailwind:dev": "npx tailwindcss -i ./index.css -o ./code/index.css --watch",
+    "tailwind:build": "npx tailwindcss -i ./index.css -o ./code/index.css"
   },
   "dependencies": {
     "animate.css": "4.1.1",
-    "bootstrap": "5.0.0-beta1",
-    "live-server": "1.2.1"
+    "bootstrap": "5.1.3"
+  },
+  "devDependencies": {
+    "live-server": "1.2.2",
+    "tailwindcss": "3.0.24"
   }
 }

@@ -2,12 +2,12 @@
 
 Solo i comandi più comuni per cominciare!
 
-| Comando       | Bash         | Prompt  |
-| ------------- | ------------ | ------- |
-| Elenco file   | ls (ls -l)   | dir     |
-| Cambia cartella  | cd [folder] |  cd [folder]        |
-| Cartella precedente   | cd ..   | cd..     |
-| Crea cartela   | mkdir [folder]   | md [folder]     |
+| Comando             | Bash           | Prompt      |
+| ------------------- | -------------- | ----------- |
+| Elenco file         | ls (ls -l)     | dir         |
+| Cambia cartella     | cd [folder]    | cd [folder] |
+| Cartella precedente | cd ..          | cd..        |
+| Crea cartela        | mkdir [folder] | md [folder] |
 
 **Bash**: macOS, Linux, Windows 10 WSL (anniversary update), [GitBash](https://git-for-windows.github.io/).
 

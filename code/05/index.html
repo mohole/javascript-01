@@ -4,33 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="./../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./../index.css">
 
   <script src="js/widget.js" type="module"></script>
 
   <title>Contacts list widget</title>
 
-  <style>
-    body { background-color: #f0f0f0; }
-    .container { padding: 40px 0; }
-    .card { width: 400px; }
-    .card input { margin-bottom: 10px; }
-    .card li { margin: 10px 0; }
-  </style>
 </head>
-<body>
+<body class="bg-gray-100">
 
-  <section class="container widget">
+  <section class="container mx-auto p-10">
 
-    <div class="card shadow-sm">
-      <div class="card-body">
-        <h2 class="card-title">Lista contatti</h2>
-        <input type="text" name="search" autocomplete="off" class="form-control">
-        
-        <ol>
-          <!-- client side templating here -->
-        </ol>
-      </div>
+    <div class="w-96 bg-white p-4 drop-shadow-xl">
+      <h2 class="text-2xl font-bold mb-2">Lista contatti</h2>
+      <input type="text" name="search" autocomplete="off" class="rounded-md border-2 border-gray-200 p-2 focus:outline-none focus:border-sky-500 ">
+      
+      <ol class="my-2">
+        <!-- client side templating here -->
+      </ol>
     </div>
 
   </section>

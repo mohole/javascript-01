@@ -1,23 +1,20 @@
+import { render } from "./render.js";
 
-import { render } from './render.js';
-
-const URL = 'http://localhost:8080/code/05/data/contacts.json';
+const URL = "http://localhost:8080/code/05/data/contacts.json";
 
 const q = (selector) => document.querySelector(selector);
 
-window.addEventListener('DOMContentLoaded', () => {
-
-  const list = q('.widget ol');
-  const input = q('.widget input');
+window.addEventListener("DOMContentLoaded", () => {
+  const list = q("ol");
+  const input = q("input");
 
   fetch(URL)
-    .then((response) => response.json() )
+    .then((response) => response.json())
     .then((data) => {
-
       // Primo render dei dati
       render(data, list);
 
-      input.addEventListener('keyup', () => {
+      input.addEventListener("keyup", () => {
         // Leggo il testo della input e lo converto in minuscolo
         const txt = input.value.toLowerCase();
 
@@ -36,5 +33,4 @@ window.addEventListener('DOMContentLoaded', () => {
         render(results, list);
       });
     });
-
 });
