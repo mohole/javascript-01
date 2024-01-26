@@ -9,6 +9,6 @@ Solo i comandi più comuni per cominciare!
 | Cartella precedente | cd ..          | cd..        |
 | Crea cartela        | mkdir [folder] | md [folder] |
 
-**Bash**: macOS, Linux, Windows 10 WSL (anniversary update), [GitBash](https://git-for-windows.github.io/).
+**Bash**: macOS, Linux, Windows 10/11 WSL, [GitBash](https://git-for-windows.github.io/).
 
-**Prompt**: Windows 10 (prima release) e inferiori.
+**Prompt**: Windows 10/11 senza WSL e inferiori.

@@ -12,7 +12,7 @@
 | node             | avvia la REPL interattiva                      |
 | node [*file.js*] | esegue un file Javascript nell'ambiente NodeJS |
 
-| NPM (5+)                        |                                                                               |
+| NPM                             |                                                                               |
 | ------------------------------- | ----------------------------------------------------------------------------- |
 | npm install                     | installa tutti i moduli specificati in un package.json                        |
 | npm install [modulo]            | installa un modulo e lo registra come dipendenza nel package.json             |
